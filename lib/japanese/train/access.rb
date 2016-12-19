@@ -9,13 +9,9 @@ module Japanese
     finish = gets.strip
 
 
-    if true # ネットにつながっているときはtrueにする
   	  url = "http://transit.yahoo.co.jp/search/result?flatlon=&from=#{start}&tlatlon=&to=#{finish}"
   	  url_escape = URI.escape(url)
   	  page = Nokogiri::HTML.parse(open(url_escape).read)
-    else
-      page = Nokogiri::HTML.parse(File.read('scrap_test.txt'))
-    end
 
 
 
