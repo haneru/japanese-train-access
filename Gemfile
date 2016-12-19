@@ -4,3 +4,4 @@ source 'https://rubygems.org'
 gemspec
 gem 'pry'
 gem 'nokogiri'
+gem 'rspec-rails', '~> 3.0.0'
