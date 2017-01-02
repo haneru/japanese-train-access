@@ -2,4 +2,4 @@
 
 require 'japanese/train/access'
 
-japanesetrainaccess::CLI.start
+JapaneseTrainAccess::CLI.start

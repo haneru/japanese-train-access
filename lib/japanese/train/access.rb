@@ -3,12 +3,16 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 require 'thor'
+require "japanese/train/cli"
+
 module Japanese
   module Train
     module Access
       def self.route
-        start = gets.strip
-        finish = gets.strip
+        puts "出発駅を入力してください"
+        start = STDIN.gets.strip
+        puts "終着駅を入力してください"
+        finish = STDIN.gets.strip
 
 
     	  url = "http://transit.yahoo.co.jp/search/result?flatlon=&from=#{start}&tlatlon=&to=#{finish}"

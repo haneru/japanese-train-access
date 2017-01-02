@@ -1,4 +1,4 @@
-require 'japanese-train-access'
+require 'japanese/train/access'
 require 'thor'
 
 module JapaneseTrainAccess
