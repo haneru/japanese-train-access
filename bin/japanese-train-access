@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'japanese/train/access'
+
+japanesetrainaccess::CLI.start
