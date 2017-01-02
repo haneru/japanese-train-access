@@ -7,5 +7,10 @@ module JapaneseTrainAccess
     def jta
       Japanese::Train::Access.route
     end
+
+    desc "version", "version"
+    def version
+      p Japanese::Train::Access::VERSION
+    end
   end
 end
