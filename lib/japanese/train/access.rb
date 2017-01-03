@@ -3,7 +3,6 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 require 'thor'
-require "japanese/train/cli"
 
 module Japanese
   module Train
