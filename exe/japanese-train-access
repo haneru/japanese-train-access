@@ -1,8 +1,12 @@
+#!/usr/bin/env ruby
+
 require 'japanese/train/access'
 require 'thor'
 
 module JapaneseTrainAccess
   class CLI < Thor
+
+    default_task :jta
     desc "jta", "If you want to seach train access information in japan near by now time."
     def jta
       Japanese::Train::Access.route
@@ -14,3 +18,5 @@ module JapaneseTrainAccess
     end
   end
 end
+
+JapaneseTrainAccess::CLI.start(ARGV)
